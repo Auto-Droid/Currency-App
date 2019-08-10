@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rlParentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+    <ImageView
+            android:id="@+id/ivCurrencyFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvCurrencyName"
+            android:layout_alignTop="@id/tvCurrencySymbol"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginRight="10dp"/>
+
+    <TextView
+            android:id="@+id/tvCurrencySymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivCurrencyFlag"
+            android:text="EUR"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:id="@+id/tvCurrencyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCurrencySymbol"
+            android:layout_toRightOf="@id/ivCurrencyFlag"
+            tools:text="Euro"
+            android:textColor="#919294"
+            android:textSize="14sp"/>
+
+    <EditText
+            android:id="@+id/edtCurrencyAmount"
+            android:text="1.00"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

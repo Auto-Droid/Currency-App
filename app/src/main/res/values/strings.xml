@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Currency App</string>
+
+    <string name="title_main">Rates &amp; conversions</string>
+    <string name="title_rates">All Rates</string>
+    <string name="title_converter">Converter</string>
+    <string name="error_msg">"Something went wrong!!! Check internet maybe"</string>
+
+</resources>
